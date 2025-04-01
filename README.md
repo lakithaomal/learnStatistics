@@ -197,7 +197,11 @@ print("\nChi-square statistic:", chi2)
 print("p-value:", p)
 print("Degrees of freedom:", dof)
 print("Expected frequencies:\n", expected)
-
+```
+✅ When to Use This Test
+ - You have two categorical variables
+ - You want to test if they are related or independent
+ - Your data is in the form of counts/frequency
  
  ### Making the Decision:
   If the p-value ≤ α, reject the null hypothesis (evidence supports the alternative).
