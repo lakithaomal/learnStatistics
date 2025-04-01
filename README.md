@@ -79,7 +79,7 @@ print("degrees of freedom:", df)
 
 You have test scores from two different classes:
   - Class A: [85, 87, 90, 88, 86]
-	- Class B: [78, 80, 75, 77, 79]
+  - Class B: [78, 80, 75, 77, 79, 75, 77, 7]
 
 🧪 Hypotheses:
 	- H₀ (Null): The means of the two groups are equal → μ₁ = μ₂
@@ -104,12 +104,12 @@ print("degrees of freedom:", df)
 📊 Scenario:
 
 Blood pressure before and after treatment:
-	•	Before: [130, 128, 135, 133, 129]
-	•	After: [125, 124, 130, 128, 126]
+	- Before: [130, 128, 135, 133, 129]
+	- After: [125, 124, 130, 128, 126]
 
 🧪 Hypotheses:
-	•	H₀ (Null): There is no change in mean → μ_before = μ_after
-	•	H₁ (Alt): There is a change → μ_before ≠ μ_after
+	- H₀ (Null): There is no change in mean → μ_before = μ_after
+	- H₁ (Alt): There is a change → μ_before ≠ μ_after
 
 You could also use one-sided alternative if you expect a specific direction (e.g., decrease only).
 
