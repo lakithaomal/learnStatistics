@@ -133,6 +133,71 @@ print("degrees of freedom:", df)
 | Two-sample t-test     | Means of two groups are equal (μ₁ = μ₂)             |
 | Paired t-test         | Mean difference between pairs = 0 (μ_before = μ_after) |
 
+
+
+# 📊 Chi-Square Test for Independence using `tips` Dataset
+
+## ✅ What is the Chi-Square Test?
+
+The **Chi-Square Test for Independence** checks if two categorical variables are **statistically associated** or **independent**.
+
+---
+
+## 📚 Dataset: `sns.load_dataset('tips')`
+
+We’ll use the built-in **tips** dataset from Seaborn:
+
+- **`sex`**: Male or Female
+- **`smoker`**: Yes or No
+
+---
+
+## 🧪 Research Question
+
+> Is there a **relationship** between a person's **gender** and whether they are a **smoker**?
+
+---
+
+## 🧪 Hypotheses
+
+- **H₀ (Null)**:  
+  Gender and smoking status are **independent** (no association)
+
+- **H₁ (Alternative)**:  
+  Gender and smoking status are **not independent** (there is an association)
+
+---
+
+## 🐍 Python Code
+
+```python
+import seaborn as sns
+import pandas as pd
+from scipy.stats import chi2_contingency
+
+# Load the dataset
+tips = sns.load_dataset('tips')
+
+# Create a contingency table of 'sex' vs 'smoker'
+table = pd.crosstab(tips['sex'], tips['smoker'])
+
+print("Contingency Table:")
+print(table)
+# Contingency Table:
+# smoker  No  Yes
+# sex            
+# Male    97   60
+# Female  54   33
+
+# Perform the Chi-Square Test of Independence
+chi2, p, dof, expected = chi2_contingency(table)
+
+# Print results
+print("\nChi-square statistic:", chi2)
+print("p-value:", p)
+print("Degrees of freedom:", dof)
+print("Expected frequencies:\n", expected)
+
  
  ### Making the Decision:
   If the p-value ≤ α, reject the null hypothesis (evidence supports the alternative).
