@@ -27,7 +27,7 @@ The P value is the probabilty of the null hypothesis being true.
 ### Appropriate Test:
 Based on the type of data and hypothesis (e.g., t-test, z-test, chi-square test, ANOVA). A value that tells how far the sample result is from the null hypothesis expectation. The probability of observing the sample data, or something more extreme, if the null hypothesis is true.
 
-#### One-sample proportion test :
+## One-sample proportion test :
 
 You have a binary outcome (success/failure, yes/no, 1/0) and want to test if the observed proportion differs from a known or expected proportion.
   Suppose 60 out of 100 people prefer a new product. Is this proportion significantly different from 50%?
@@ -43,13 +43,13 @@ You have a binary outcome (success/failure, yes/no, 1/0) and want to test if the
   print("Z-statistic:", stat)
   print("p-value:", pval)
   ```
-#### T Test
+## T Test
 A t-test is a statistical test used to compare means. 
 It answers questions like:
   - “Is this sample mean different from a known value?”
-	- “Are these two groups different from each other?”
+  - “Are these two groups different from each other?”
 
-##### One-sample t-test
+### One-sample t-test
 👉 Compares the sample mean to a known value.
 You measured the weights of 5 apples: [150, 155, 148, 152, 151]
 You want to know if their average is different from 150g.
@@ -74,7 +74,7 @@ print("p-value:", p_value)
 print("degrees of freedom:", df)
 ```
 
-##### Two-Sample t-test (Independent)
+### Two-Sample t-test (Independent)
 📊 Scenario:
 
 You have test scores from two different classes:
@@ -99,7 +99,7 @@ print("p-value:", p_value)
 print("degrees of freedom:", df)
 ```
 
-##### Paired t-test (Dependent)
+### Paired t-test (Dependent)
 
 📊 Scenario:
 
@@ -133,10 +133,7 @@ print("degrees of freedom:", df)
 | Two-sample t-test     | Means of two groups are equal (μ₁ = μ₂)             |
 | Paired t-test         | Mean difference between pairs = 0 (μ_before = μ_after) |
 
-
-
-
  
  ### Making the Decision:
   If the p-value ≤ α, reject the null hypothesis (evidence supports the alternative).
-	If the p-value > α, fail to reject the null hypothesis (not enough evidence to support the alternative).
+  If the p-value > α, fail to reject the null hypothesis (not enough evidence to support the alternative).
