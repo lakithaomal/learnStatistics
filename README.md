@@ -13,10 +13,10 @@ An assumption that treats everything equal or similar.
 	•	H_1: The new drug has a greater effect than the standard.
 
  
-| **Actual Situation**         | **Fail to Reject H₀**           | **Reject H₀**                     |
-|------------------------------|----------------------------------|----------------------------------|
-| **H₀ is True**               | ✅ **Correct Decision**          | ❌ **Type I Error**              |
-| **H₁ is True** (H₀ is False) | ❌ **Type II Error**             | ✅ **Correct Decision**          |
+| **Decision**             | **H₀ is True**               | **H₁ is True (H₀ is False)**     |
+|--------------------------|------------------------------|----------------------------------|
+| **Fail to Reject H₀**    | ✅ **Correct Decision**       | ❌ **Type II Error**             |
+| **Reject H₀**            | ❌ **Type I Error**           | ✅ **Correct Decision**          |
 
 ### P Value 
 The P value is the probabilty of the null hypothesis being true. 
